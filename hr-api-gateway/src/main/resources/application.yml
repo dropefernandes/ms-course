@@ -20,3 +20,7 @@ spring:
         uri: lb://hr-worker/workers
         predicates:
         - Path=/workers/**
+      - id: hr-user
+        uri: lb://hr-user/users
+        predicates:
+        - Path=/users/**
